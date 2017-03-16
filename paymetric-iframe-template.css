@@ -1,0 +1,295 @@
+@font-face{
+    font-family: 'Open Sans';
+    src: url("../../fonts/OpenSans-Regular.woff");
+}
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url("../../fonts/OpenSans-Italic.woff");
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url("../../fonts/OpenSans-Bold.woff");
+    font-weight: bold;
+}
+
+html{
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    line-height: 24px;
+}
+
+
+/* forms general styles */
+
+form label{
+    line-height: normal;
+}
+
+.form-holder{
+    padding-top: 18px;
+}
+
+.form-row,
+.form-button{
+    margin-bottom: 20px;
+}
+
+.form-row .control{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.form-row .label,
+.form-row .field{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form-row .label{
+    width: 36%;
+    padding-right: 3%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.row-comments .label{
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.form-row .validation,
+.form-row .description,
+.form-button{
+    padding-left: 36%;
+    margin-top: 0px;
+}
+
+.row-under-columns{
+    margin-top: -12px;
+}
+
+.field-validation-valid{
+    display: none;
+}
+
+.form-row .field-validation-error,
+.form-row .feedback-message{
+    display: block;
+	line-height: 12px;
+    padding: 4px 0px 4px 24px;
+    margin-top: 4px;
+}
+
+.form-row .field-validation-error{
+	background: url(../../files/icons/form-invalid.png) no-repeat scroll left center;
+}
+
+.form-row .feedback-message{
+	background: url(../../files/icons/form-description.png) no-repeat scroll left center;
+}
+
+.msg-not-available{
+    font-weight: bold;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+
+.form-row .in-line{
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.form-row .in-line.left-part{
+    width: 48%;
+}
+
+.form-inline{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*          message blocks          */
+.msg-block{
+    font-style: italic;
+    margin: 45px 0;
+    line-height: 60px;
+    text-align: center;
+}
+
+.msg-block-error,
+.validation-summary-errors,
+.msg-block-confirm,
+.msg-block-info,
+.msg-block-alert{
+    position: relative;
+	margin: 20px 0;
+    padding: 15px 20px 15px 36px;
+    line-height: normal;
+}
+
+.msg-block-error:before,
+.validation-summary-errors:before,
+.msg-block-confirm:before,
+.msg-block-info:before,
+.msg-block-alert:before{
+    content: '';
+	position: absolute;
+}
+
+.msg-block-error:before,
+.validation-summary-errors:before{
+    background: url(../../files/icons/error.png);
+    top: 18px;
+    left: 10px;
+    height: 12px;
+    width: 12px;
+}
+
+.msg-block-confirm:before{
+    background: url(../../files/icons/msg-confirm.png);
+    top: 15px;
+    left: 9px;
+    height: 16px;
+    width: 14px;
+}
+
+.msg-block-info:before{
+    background: url(../../files/icons/msg-info.png);
+    top: 16px;
+    left: 12px;
+    height: 16px;
+    width: 8px;
+}
+
+.msg-block-alert:before{
+    background: url(../../files/icons/msg-alert.png);
+    top: 15px;
+    left: 13px;
+    height: 14px;
+    width: 5px;
+}
+
+.msg-block-error ul{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.validation-summary-errors ul{
+    display: none;
+}
+
+
+/* END forms general styles */
+
+
+
+
+
+
+/*          text boxes           */
+.tbx,
+.tar{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-radius: 3px;
+    position: relative;
+}
+
+.tbx input,
+.tar textarea{
+    display: block;
+    border: 0 none;
+    background: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    padding: 0px 14px;
+}
+
+.tbx input{
+    height: 34px;
+}
+
+.tar textarea{
+    height: 75px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* theme styles css */
+body{
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #808080;
+}
+
+.tbx,
+.tar{
+    background: #f2f2f2;
+    border-color: #c2c2c2;
+}
+
+.tbx.focused,
+.tar.focused{
+    background: #fff;
+    border-bottom-color: #1f7bc9;
+}
+
+.ui-selectmenu-button,
+.ui-menu{
+    background: #f2f2f2;
+    border-color: #c2c2c2;
+}
+
+.ui-selectmenu-button.ui-state-focus{
+    background: #fff;
+    border-bottom-color: #1f7bc9;
+}
+
+.ui-selectmenu-button[aria-expanded="true"]{
+    border-color: #f2f2f2;
+}
+
+.ui-menu-item.ui-state-focus{
+    background-color: #fafafa;
+}
+
+.ui-datepicker.ui-widget-content{
+    background-color: #fafafa;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.ui-datepicker .ui-datepicker-today{
+    background-color: #e9e9e9;
+}
+
+
+
+.ui-selectmenu-button,
+.ui-selectmenu-menu{
+    color: #333;
+}
